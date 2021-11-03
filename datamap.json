@@ -1,0 +1,56 @@
+{
+    "raw": {
+        "loc": "/raws/",
+        "files": [
+            {
+                "name": "S&P 500",
+                "file": "SPX_Nasdaq.csv",
+                "source": {
+                    "name": "Nasdaq",
+                    "url": "//nasdaq.com/market-activity/index/spx/historical"
+                },
+                "range": {
+                    "start": "3/11/2011",
+                    "end": "3/11/2021"
+                }
+            },
+            {
+                "name": "S&P SENSEX",
+                "file": "SENSEX_BSE.csv",
+                "source": {
+                    "name": "BSE India",
+                    "url": "//bseindia.com/Indices/IndexArchiveData.html"
+                },
+                "range": {
+                    "start": "2/1/1991",
+                    "end": "3/11/2021"
+                }
+            },
+            {
+                "name": "NIKKEI 225",
+                "file": "N225_Yahoo.csv",
+                "source": {
+                    "name": "Yahoo Finance",
+                    "url": "//finance.yahoo.com/quote/%5EN225/history",
+                    "config": "?period1=662688000&period2=1635897600&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true"
+                },
+                "range": {
+                    "start": "4/1/1991",
+                    "end": "2/11/2021"
+                }
+            },
+            {
+                "name": "FTSE 100",
+                "file": "UKX_WSJ.csv",
+                "source": {
+                    "name": "Wall Street Journal",
+                    "url": "//wsj.com/market-data/quotes/index/UK/UKX/historical-prices"
+                },
+                "range": {
+                    "start": "2/1/1991",
+                    "end": "3/11/2021"
+                }
+            }
+        ]
+    }
+}
