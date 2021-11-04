@@ -1,43 +1,63 @@
 {
     "raw": {
-        "loc": "/raws/",
+        "loc": "raws/",
         "files": [
             {
                 "name": "S&P 500",
-                "file": "SPX_Nasdaq.csv",
+                "file": "SPX_WSJ.csv",
                 "source": {
-                    "name": "Nasdaq",
-                    "url": "//nasdaq.com/market-activity/index/spx/historical"
-                },
-                "range": {
-                    "start": "3/11/2011",
-                    "end": "3/11/2021"
-                }
-            },
-            {
-                "name": "S&P SENSEX",
-                "file": "SENSEX_BSE.csv",
-                "source": {
-                    "name": "BSE India",
-                    "url": "//bseindia.com/Indices/IndexArchiveData.html"
+                    "name": "WSJ",
+                    "url": "//wsj.com/market-data/quotes/index/SPX/historical-prices"
                 },
                 "range": {
                     "start": "2/1/1991",
                     "end": "3/11/2021"
-                }
+                },
+                "order": [
+                    "Date",
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ]
+            },
+            {
+                "name": "SENSEX",
+                "file": "SENSEX_WSJ.csv",
+                "source": {
+                    "name": "WSJ",
+                    "url": "//wsj.com/market-data/quotes/index/IN/1/historical-prices"
+                },
+                "range": {
+                    "start": "1/1/1991",
+                    "end": "3/11/2021"
+                },
+                "order": [
+                    "Date",
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ]
             },
             {
                 "name": "NIKKEI 225",
-                "file": "N225_Yahoo.csv",
+                "file": "N225_WSJ.csv",
                 "source": {
-                    "name": "Yahoo Finance",
-                    "url": "//finance.yahoo.com/quote/%5EN225/history",
-                    "config": "?period1=662688000&period2=1635897600&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true"
+                    "name": "WSJ",
+                    "url": "//wsj.com/market-data/quotes/index/JP/NIK/historical-prices"
                 },
                 "range": {
                     "start": "4/1/1991",
                     "end": "2/11/2021"
-                }
+                },
+                "order": [
+                    "Date",
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ]
             },
             {
                 "name": "FTSE 100",
@@ -49,7 +69,36 @@
                 "range": {
                     "start": "2/1/1991",
                     "end": "3/11/2021"
-                }
+                },
+                "order": [
+                    "Date",
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close"
+                ]
+            },
+            {
+                "name": "BTC/USD",
+                "file": "BTC-USD_Yahoo.csv",
+                "source": {
+                    "name": "Yahoo Finance",
+                    "url": "//finance.yahoo.com/quote/BTC-USD/history",
+                    "config": "?period1=1410912000&period2=1635984000&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true"
+                },
+                "range": {
+                    "start": "17/9/2014",
+                    "end": "4/11/2021"
+                },
+                "order": [
+                    "Date",
+                    "Open",
+                    "High",
+                    "Low",
+                    "Close",
+                    "Adj Close",
+                    "Volume"
+                ]
             }
         ]
     }
